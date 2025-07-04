@@ -2,7 +2,7 @@ Author: Brad Pitt
 
  npx cypress run --record --key 67e9405f-dcdf-43ce-a1c7-0ec1f8d4fe2f
 
- npx cypress run --record --key <TWOJ_CYPRESS_RECORD_KEY> --browser chrome
+ npx cypress run --record --key 67e9405f-dcdf-43ce-a1c7-0ec1f8d4fe2f --browser chrome
 
  name: TestAutomation 
 
