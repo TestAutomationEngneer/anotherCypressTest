@@ -1,7 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-  projectId: 'a7bq2k',
+  projectId: 'qwmpaq',
   e2e: {
     baseUrl: 'http://www.automationpractice.pl/index.php', // zmień na URL swojej aplikacji
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
