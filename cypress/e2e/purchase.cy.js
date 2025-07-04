@@ -1,4 +1,4 @@
-describe('Przejście do strony kontaktowej', () => {
+describe('Zakupy', () => {
     
     it(' 1 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
         cy.visit('http://www.automationpractice.pl/index.php')
@@ -6,6 +6,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt1')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -42,6 +43,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt4')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -54,6 +56,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt5')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -78,6 +81,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt7')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -90,6 +94,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt8')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -114,6 +119,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt10')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
@@ -138,6 +144,7 @@ describe('Przejście do strony kontaktowej', () => {
         // Wpisz "tshirt" w pole wyszukiwania i kliknij ikonę lupy
         cy.get('#search_query_top').type('tshirt12')
         cy.get('button[name="submit_search"]').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')

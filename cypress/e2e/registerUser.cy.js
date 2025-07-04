@@ -21,6 +21,7 @@ it('Powinien wypełnić formularz tworzenia nowego konta', () => {
 
   
     cy.get('#submitAccount > span').click()
+    cy.wait(20000) // 10 000 ms = 10 sekund
   
     // Sprawdź, czy użytkownik trafił na stronę konta
     cy.url().should('include', 'controller=my-account')

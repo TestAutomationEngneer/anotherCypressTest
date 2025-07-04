@@ -4,6 +4,7 @@ describe('Przejście do strony kontaktowej', () => {
   
       // Kliknij link "Contact us" w prawym górnym rogu
       cy.get('#contact-link > a').click()
+      cy.wait(10000) // 10 000 ms = 10 sekund
   
       // Sprawdzenie, czy jesteśmy na stronie kontaktowej
       cy.url().should('include', 'controller=contact')
@@ -27,6 +28,7 @@ describe('Przejście do strony kontaktowej', () => {
       
         // Kliknij przycisk Wyślij
         cy.get('#submitMessage').click()
+        cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdzenie czy wiadomość została wysłana
         cy.get('.alert-success').should('contain.text', 'Your message has been successfully sent to our team.')
