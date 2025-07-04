@@ -1,6 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  projectId: 'a7bq2k',
   e2e: {
     baseUrl: 'http://www.automationpractice.pl/index.php', // zmień na URL swojej aplikacji
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
@@ -13,4 +14,5 @@ module.exports = defineConfig({
   viewportHeight: 720,
   video: false,           // nagrywa wideo z testów
   screenshotOnRunFailure: false, // screenshot przy błędzie
+
 })
