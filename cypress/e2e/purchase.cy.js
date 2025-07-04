@@ -8,6 +8,19 @@ describe('Zakupy', () => {
         cy.get('button[name="submit_search"]').click()
         cy.wait(10000) // 10 000 ms = 10 sekund
       
+
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
+
+
+
         // Sprawdź komunikat o braku wyników
         cy.get('.alert.alert-warning')
           .should('contain.text', 'No results were found for your search')
@@ -21,8 +34,15 @@ describe('Zakupy', () => {
         cy.get('button[name="submit_search"]').click()
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('3 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
@@ -33,8 +53,15 @@ describe('Zakupy', () => {
         cy.get('button[name="submit_search"]').click()
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('4 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
@@ -46,8 +73,15 @@ describe('Zakupy', () => {
         cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('5 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
@@ -59,8 +93,15 @@ describe('Zakupy', () => {
         cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('6 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
@@ -84,8 +125,15 @@ describe('Zakupy', () => {
         cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('8 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
@@ -97,8 +145,15 @@ describe('Zakupy', () => {
         cy.wait(10000) // 10 000 ms = 10 sekund
       
         // Sprawdź komunikat o braku wyników
-        cy.get('.alert.alert-warning')
-          .should('contain.text', 'No results were found for your search')
+        const random = Math.floor(Math.random() * 2)
+        if (random === 0) {
+          // Celowo błędne expected (fail)
+        cy.get('.alert.alert-warning').should('contain.text', 'fksdfghsjg ')
+        } else {
+          // Poprawne expected (pass)
+           // Sprawdź komunikat o braku wyników
+        cy.get('.alert.alert-warning').should('contain.text', 'No results were found for your search')
+        }
       })
 
       it('9 Powinien wpisać tshirt w wyszukiwarce i sprawdzić brak wyników', () => {
