@@ -3,13 +3,15 @@ project - another cypress project
 
 https://cloud.cypress.io/projects/qwmpaq/runs/11/specs
 
+npx cypress run --record --key b0afaec2-d8e8-45b5-a922-fffb6ec48186 --parallel --ci-build-id build-demo-00 --browser firefox
+
 
 
 Author: Brad Pitt
 
- npx cypress run --record --key 67e9405f-dcdf-43ce-a1c7-0ec1f8d4fe2f
+ npx cypress run --record --key b0afaec2-d8e8-45b5-a922-fffb6ec48186  
 
- npx cypress run --record --key 67e9405f-dcdf-43ce-a1c7-0ec1f8d4fe2f --browser firefox
+ npx cypress run --record --key b0afaec2-d8e8-45b5-a922-fffb6ec48186 --browser firefox
 
  name: TestAutomation 
 
